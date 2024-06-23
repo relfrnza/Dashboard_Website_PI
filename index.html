@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Penelitian Ilmiah</title>
+
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/dist/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Hero Start -->
+    <section
+      id="hero"
+      class="hero hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h3>Hi Everyone!</h3>
+        <h2>Welcome to my website,</h2>
+        <p>Netflix Data Visualization from 2008 to 2021</p>
+        <a href="#addcontent" class="btn btn-outline-info" role="button"
+          >See Details</a
+        >
+      </main>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">Dashboard Visualisasi Netflix</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Dashboard Visualisasi Netflix
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#hero">Home</a>
+              <a class="nav-link" href="#addcontent">Peta</a>
+              <a class="nav-link" href="#pub">Konten Publikasi</a>
+              <a class="nav-link" href="#perb">Perbandingan</a>
+              <a class="nav-link" href="#rating">Rating</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Distribusi Geografis Start -->
+    <section id="addcontent" class="addcontent">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2>Distribusi Geografis Negara Pengunggah Konten di Netflix</h2>
+
+          <div class="report">
+            <iframe
+              class="chart1"
+              width="100%"
+              height="850"
+              src="https://lookerstudio.google.com/embed/reporting/03c00efc-0c73-480a-97bd-5fa295944308/page/Heb3D"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+              sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Distribusi Geografis End -->
+
+    <!-- Konten Publikasi Start -->
+    <section class="pub" id="pub">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2>Publikasi Konten Netflix Berdasarkan Tahun dan Bulan</h2>
+
+          <div class="report">
+            <iframe
+              class="chart2"
+              width="100%"
+              height="850"
+              src="https://lookerstudio.google.com/embed/reporting/ba60f1bf-9770-4be4-bd15-896fd5847894/page/LHc3D"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+              sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            ></iframe>
+
+            <div class="report">
+              <iframe
+                class="chart3"
+                width="100%"
+                height="850"
+                src="https://lookerstudio.google.com/embed/reporting/28a61248-d933-49ec-acba-9d727a95c0c2/page/2Lc3D"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+              ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Konten Publikasi End -->
+
+    <!-- Perbandingan Start -->
+    <section class="perb" id="perb">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2>Perbandingan Antara Konten Movie dan TV Show pada Netflix</h2>
+
+          <div class="report">
+            <iframe
+              class="chart4"
+              width="100%"
+              height="850"
+              src="https://lookerstudio.google.com/embed/reporting/1403010f-7155-42a6-9be6-f4e30ade9c96/page/1Qc3D"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+              sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Perbandingan End -->
+
+    <!-- Rating Start -->
+    <section class="rating" id="rating">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2>Rating Konten Film di Netflix</h2>
+
+          <div class="report">
+            <iframe class="chart5" width="100%" height="650" src="https://lookerstudio.google.com/embed/reporting/8e14706d-8655-4b24-af64-76a0b799c1f7/page/gfc3D" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rating End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; Website Penelitian Ilmiah. All Rights Reserved.</small>
+            <small class="block">Design by <a href="#https://github.com/relfrnza">Rean Elfrianza</a></small>
+    
+            <ul class="mt-2">
+              <li><a href="https://github.com/relfrnza" target="_blank"><i class="bi bi-github"></i></a></li>
+              <li><a href="https://www.instagram.com/relfrnza/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/rean-elfrianza-35101a246" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS Start -->
+    <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS End -->
+  </body>
+</html>
